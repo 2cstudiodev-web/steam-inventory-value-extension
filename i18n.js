@@ -12,7 +12,7 @@
     useInventory: "Please list from your Steam inventory page.",
     openInventory: "Open my inventory",
     noCurrency: "We can't read your Steam Wallet currency on this page. Please use the extension on your inventory page.",
-    wrongCurrency: "Your Steam Wallet currency doesn't match this order, so prices wouldn't line up. The extension won't list anything. Please contact us.",
+    wrongCurrency: "Your Steam Wallet currency doesn't match the one chosen on this order, so prices wouldn't line up. The extension won't list anything. Please contact us and we'll change the order's currency.",
 
     waiting: "Waiting",
     notFound: "Not found",
@@ -83,7 +83,7 @@
     useInventory: "请在你的 Steam 库存页面上架。",
     openInventory: "打开我的库存",
     noCurrency: "这一页读不到你的 Steam 钱包货币。请到你的库存页面使用插件。",
-    wrongCurrency: "你的 Steam 钱包货币和订单不同，价格会对不上，插件不会上架。请联系我们。",
+    wrongCurrency: "你的 Steam 钱包货币和下单时选的不同，价格会对不上，插件不会上架。请联系我们改订单的货币。",
 
     waiting: "等待",
     notFound: "查不到",

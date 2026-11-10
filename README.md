@@ -1,6 +1,6 @@
 # Steam Inventory Value & Listing Helper (browser extension)
 
-This is the source code of the browser extension for [Steam Inventory Value](https://steam.2cstudio.app), exactly as published in the Chrome Web Store:
+This is the source code of the browser extension for [Steam Inventory Value](https://steam.2cstudio.app), exactly as uploaded to the Chrome Web Store (the `main` branch is the latest upload; each published version has a tag):
 https://chromewebstore.google.com/detail/bdggedaolbocnacmanlcekmeggoefgmf
 
 It is published so that anyone can check what the extension does before installing it. The website and its back end are not in this repository.
@@ -54,7 +54,14 @@ Nothing else leaves your browser.
 
 ## The package itself
 
-`dist/steam-listing-helper-0.4.7.zip` is the exact file uploaded to the Chrome Web Store for version 0.4.7 (SHA-256 `3f33ff47d7e76ea91e277110e21b0506e9d20865e771d89fb9a65b26fad3140a`). You can unzip it and compare it with the files in this repository, or scan it with any tool you trust.
+`dist/` holds the exact file uploaded to the Chrome Web Store for each version, so you can unzip it and compare it with the files in this repository, or scan it with any tool you trust.
+
+| Version | File | SHA-256 | Store status |
+|---|---|---|---|
+| 0.4.7 | `dist/steam-listing-helper-0.4.7.zip` | `3f33ff47d7e76ea91e277110e21b0506e9d20865e771d89fb9a65b26fad3140a` | Published |
+| 0.4.8 | `dist/steam-listing-helper-0.4.8.zip` | `19f1888f6b3e03440ef32767d560761b59170dc15c26dda81a89e9a4007d4954` | Submitted 10 November 2026, in review |
+
+0.4.8 changes only how amounts are shown: in the currency of your Steam Wallet as chosen on the order, instead of always in Malaysian Ringgit.
 
 ## Third-party scan
 

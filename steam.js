@@ -174,7 +174,7 @@
       const d = decided.get(it.id);
       if (!d) return h("td", { class: "num muted" }, "-");
       if (d.live_buyer_cents == null) return h("td", { class: "num muted" }, d.action === "fail" ? T.notFound : T.noListings);
-      return h("td", { class: "num" + (d.drop_pct != null ? " bad" : "") }, L.rm(d.live_buyer_cents), d.drop_pct != null ? ` (−${d.drop_pct}%)` : "");
+      return h("td", { class: "num" + (d.drop_pct != null ? " bad" : "") }, L.money(d.live_buyer_cents, plan.currency), d.drop_pct != null ? ` (−${d.drop_pct}%)` : "");
     };
     const ready = () => todo.filter((it) => !it.skip && !sentIds.has(it.id) && !skippedNow.has(it.id));
 
@@ -185,7 +185,7 @@
         h("b", {}, T.confirmTitle(list.length)),
         h("ul", {}, list.map((it) => {
           const d = waiting.get(it.id);
-          return h("li", {}, T.confirmLine(it.name, L.rm(it.buyer_cents), L.rm(d.buyer_cents), L.rm(d.seller_cents), d.reason));
+          return h("li", {}, T.confirmLine(it.name, L.money(it.buyer_cents, plan.currency), L.money(d.buyer_cents, plan.currency), L.money(d.seller_cents, plan.currency), d.reason));
         })),
         h("div", { class: "row" },
           h("button", { class: "primary", on: { click: confirmAll } }, T.confirmAll(list.length)),
@@ -197,8 +197,8 @@
         const s = state.get(it.id);
         const d = decided.get(it.id);
         return h("tr", {}, h("td", {}, it.name),
-          h("td", { class: "num" }, L.rm(it.buyer_cents)), liveCell(it),
-          h("td", { class: "num" }, L.rm(d && d.seller_cents != null ? d.seller_cents : it.seller_cents)),
+          h("td", { class: "num" }, L.money(it.buyer_cents, plan.currency)), liveCell(it),
+          h("td", { class: "num" }, L.money(d && d.seller_cents != null ? d.seller_cents : it.seller_cents, plan.currency)),
           h("td", { class: s.cls + (s.cls === "good" ? " nowrap" : "") }, s.text));
       });
       const fresh = ready().filter((it) => !waiting.has(it.id));

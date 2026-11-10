@@ -132,7 +132,19 @@
     return { results, confirmedResults, notOnMarket, waiting, active: activeN, toConfirm: confirmN, unknown };
   }
 
-  function rm(cents) { return cents == null ? "-" : "RM" + (cents / 100).toFixed(2); }
+  // Steam 钱包货币（ECurrencyCode）→ 符号。网站有一份一样的表（src/lib/currencies.ts），改这里也要改那边。
+  const CURRENCIES = {
+    1: "US$", 2: "£", 3: "€", 4: "CHF ", 5: "₽", 6: "zł", 7: "R$", 8: "¥", 9: "kr ", 10: "Rp", 11: "RM", 12: "₱", 13: "S$",
+    14: "฿", 15: "₫", 16: "₩", 17: "₺", 18: "₴", 19: "MX$", 20: "CA$", 21: "A$", 22: "NZ$", 23: "¥", 24: "₹", 25: "CLP$",
+    26: "S/", 27: "COL$", 28: "R", 29: "HK$", 30: "NT$", 31: "SR", 32: "AED ", 34: "ARS$", 35: "₪", 37: "₸", 38: "KD",
+    39: "QR", 40: "₡", 41: "$U",
+  };
+  /** 金额（分）按订单的钱包货币显示，例如 money(1234, 1) → "US$12.34"。不认识的代码显示代码本身。 */
+  function money(cents, currency) {
+    if (cents == null) return "-";
+    return (CURRENCIES[currency] || ("#" + currency + " ")) + (cents / 100).toFixed(2);
+  }
+  function rm(cents) { return money(cents, 11); }
 
   // ---------- 上架前即时查价 ----------
 
@@ -245,7 +257,7 @@
   }
 
   const api = {
-    EVENT_CREATED, EVENT_CANCELLED, EVENT_SOLD, backoffMs, classifySell, assetKeys, matchMarketState, rm,
+    EVENT_CREATED, EVENT_CANCELLED, EVENT_SOLD, backoffMs, classifySell, assetKeys, matchMarketState, rm, money, CURRENCIES,
     parsePriceText, sellerReceives, listPrice, priceOverviewUrl, classifyPriceOverview, decideLivePrice, createThrottle, DROP_LIMIT,
   };
   globalThis.SCLib = api;
