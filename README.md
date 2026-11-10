@@ -56,6 +56,10 @@ Nothing else leaves your browser.
 
 `dist/steam-listing-helper-0.4.7.zip` is the exact file uploaded to the Chrome Web Store for version 0.4.7 (SHA-256 `3f33ff47d7e76ea91e277110e21b0506e9d20865e771d89fb9a65b26fad3140a`). You can unzip it and compare it with the files in this repository, or scan it with any tool you trust.
 
+## Third-party scan
+
+The 0.4.7 package was scanned on VirusTotal on 10 November 2026: none of the 65 security vendors flagged it ([report](https://www.virustotal.com/gui/file/3f33ff47d7e76ea91e277110e21b0506e9d20865e771d89fb9a65b26fad3140a)). An antivirus scan is not a code audit; the code is here for that.
+
 ## Checking that this is what you installed
 
 1. Open `chrome://extensions`, turn on Developer mode and note the extension's ID and version.
