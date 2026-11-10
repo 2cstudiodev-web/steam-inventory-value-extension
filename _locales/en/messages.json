@@ -1,0 +1,44 @@
+{
+  "extName": {
+    "message": "Steam Inventory Value & Listing Helper"
+  },
+  "extDescription": {
+    "message": "Check your Steam inventory value and list items on the Steam Market in bulk. Runs in your browser; never reads your password."
+  },
+  "popupTitle": {
+    "message": "Steam Inventory Value"
+  },
+  "popupIntro": {
+    "message": "Check what your Steam inventory is worth, then let us list the items you choose on the Steam Market. No password needed."
+  },
+  "popupCheck": {
+    "message": "Check my inventory value"
+  },
+  "popupSell": {
+    "message": "How selling with us works"
+  },
+  "popupOrders": {
+    "message": "My orders"
+  },
+  "popupHowTitle": {
+    "message": "Listing an order"
+  },
+  "popupHow1": {
+    "message": "Sign in to Steam in this browser."
+  },
+  "popupHow2": {
+    "message": "Open your order on steam.2cstudio.app and press \"List with the extension\"."
+  },
+  "popupHow3": {
+    "message": "Confirm the listings in the Steam Mobile app."
+  },
+  "popupPrivacy": {
+    "message": "Runs only in your browser. We never see your Steam password or cookies."
+  },
+  "ctaButton": {
+    "message": "Check this inventory's value"
+  },
+  "ctaTitle": {
+    "message": "Free valuation at steam.2cstudio.app"
+  }
+}

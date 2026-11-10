@@ -1,0 +1,44 @@
+{
+  "extName": {
+    "message": "Steam 库存估值与上架助手"
+  },
+  "extDescription": {
+    "message": "查你的 Steam 库存值多少钱，并把物品批量挂到 Steam 市场。在你自己的浏览器运行，不会读取你的密码。"
+  },
+  "popupTitle": {
+    "message": "Steam 库存估值"
+  },
+  "popupIntro": {
+    "message": "看看你的 Steam 库存值多少钱，再让我们帮你把选好的物品挂到 Steam 市场。不用密码。"
+  },
+  "popupCheck": {
+    "message": "查我的库存值多少"
+  },
+  "popupSell": {
+    "message": "看看托管卖怎么运作"
+  },
+  "popupOrders": {
+    "message": "我的订单"
+  },
+  "popupHowTitle": {
+    "message": "上架订单"
+  },
+  "popupHow1": {
+    "message": "在这个浏览器登入 Steam。"
+  },
+  "popupHow2": {
+    "message": "在 steam.2cstudio.app 打开你的订单，按「用插件自动上架」。"
+  },
+  "popupHow3": {
+    "message": "在 Steam 手机 app 确认挂单。"
+  },
+  "popupPrivacy": {
+    "message": "只在你的浏览器运行，我们看不到你的 Steam 密码或 cookie。"
+  },
+  "ctaButton": {
+    "message": "查这个库存值多少"
+  },
+  "ctaTitle": {
+    "message": "在 steam.2cstudio.app 免费估值"
+  }
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 320px; margin: 0; padding: 16px; background: #0f1722; color: #e6edf5; font: 14px/1.45 "Segoe UI", Arial, sans-serif; }
+    header { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
+    header img { width: 32px; height: 32px; }
+    h1 { font-size: 16px; margin: 0; }
+    p { margin: 0 0 12px; color: #8fa3bb; }
+    a.btn { display: block; text-align: center; padding: 10px; border-radius: 8px; margin-bottom: 8px; font-weight: 600; text-decoration: none; }
+    .primary { background: #4fa3e8; color: #06121f; }
+    .ghost { border: 1px solid #2b3d55; color: #e6edf5; }
+    h2 { font-size: 13px; margin: 14px 0 6px; }
+    ol { margin: 0 0 12px; padding-left: 18px; color: #8fa3bb; }
+    small { color: #8fa3bb; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <header><img src="icons/icon48.png" alt=""><h1 data-i18n="popupTitle"></h1></header>
+  <p data-i18n="popupIntro"></p>
+  <a class="btn primary" data-path="" data-i18n="popupCheck" target="_blank"></a>
+  <a class="btn ghost" data-path="sell-steam-items" data-i18n="popupSell" target="_blank"></a>
+  <a class="btn ghost" data-path="my" data-i18n="popupOrders" target="_blank"></a>
+  <h2 data-i18n="popupHowTitle"></h2>
+  <ol><li data-i18n="popupHow1"></li><li data-i18n="popupHow2"></li><li data-i18n="popupHow3"></li></ol>
+  <small data-i18n="popupPrivacy"></small>
+  <small id="ver" style="display:block;margin-top:8px"></small>
+  <script src="popup.js"></script>
+</body>
+</html>
