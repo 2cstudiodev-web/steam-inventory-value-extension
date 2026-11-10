@@ -65,7 +65,7 @@ Nothing else leaves your browser.
 
 ## Third-party scan
 
-The 0.4.7 package was scanned on VirusTotal on 10 November 2026: none of the 65 security vendors flagged it ([report](https://www.virustotal.com/gui/file/3f33ff47d7e76ea91e277110e21b0506e9d20865e771d89fb9a65b26fad3140a)). An antivirus scan is not a code audit; the code is here for that.
+Each package was scanned on VirusTotal on 10 November 2026 and no security vendor flagged it: [0.4.7 report](https://www.virustotal.com/gui/file/3f33ff47d7e76ea91e277110e21b0506e9d20865e771d89fb9a65b26fad3140a) (0 of 65), [0.4.8 report](https://www.virustotal.com/gui/file/19f1888f6b3e03440ef32767d560761b59170dc15c26dda81a89e9a4007d4954) (0 of 64). An antivirus scan is not a code audit; the code is here for that.
 
 ## Checking that this is what you installed
 
