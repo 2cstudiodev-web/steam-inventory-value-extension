@@ -58,8 +58,8 @@ Nothing else leaves your browser.
 
 | Version | File | SHA-256 | Store status |
 |---|---|---|---|
-| 0.4.7 | `dist/steam-listing-helper-0.4.7.zip` | `3f33ff47d7e76ea91e277110e21b0506e9d20865e771d89fb9a65b26fad3140a` | Published |
-| 0.4.8 | `dist/steam-listing-helper-0.4.8.zip` | `19f1888f6b3e03440ef32767d560761b59170dc15c26dda81a89e9a4007d4954` | Submitted 10 November 2026, in review |
+| 0.4.7 | `dist/steam-listing-helper-0.4.7.zip` | `3f33ff47d7e76ea91e277110e21b0506e9d20865e771d89fb9a65b26fad3140a` | Replaced by 0.4.8 |
+| 0.4.8 | `dist/steam-listing-helper-0.4.8.zip` | `19f1888f6b3e03440ef32767d560761b59170dc15c26dda81a89e9a4007d4954` | Published 11 November 2026 |
 
 0.4.8 changes only how amounts are shown: in the currency of your Steam Wallet as chosen on the order, instead of always in Malaysian Ringgit.
 
